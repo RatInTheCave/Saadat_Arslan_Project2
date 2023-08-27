@@ -82,7 +82,7 @@ public class Part_2_Dialog {
         String country = Input.nextLine();
         if (country.toUpperCase().startsWith("US")) {
             System.out.println("So you are in the US right now");
-        } else if (country.toUpperCase().equals("UK")) {
+        } else if (country.equalsIgnoreCase("UK")) {
             System.out.println("So you are in the United Kingdom right now");
         } else {
             country = country.substring(0, 1).toUpperCase() + country.substring(1).toLowerCase();
